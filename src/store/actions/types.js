@@ -1,0 +1,7 @@
+export const IS_LOADING = 'IS_LOADING'
+export const IS_ERROR = 'IS_ERROR'
+
+export const USER_LOGIN = 'USER_LOGIN'
+
+export const CREATE_TASK_SUCCESSFUL = 'CREATE_TASK_SUCCESSFUL'
+export const CREATE_TASK_FAILED = 'CREATE_TASK_FAILED'
