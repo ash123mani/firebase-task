@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { connect } from 'react-redux'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import AuthContainer from './containers/Auth'
+import NavContainer from './containers/Nav'
+import Home from './components/Home'
+import Loader from './components/Loader'
+import CreateTaskScreenContainer from './containers/CreateTaskScreen'
+import ProtectedRoute from './containers/ProtectedRoute'
+import './App.css'
 
-function App() {
+function App({ isLoading }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    { isLoading ?  <Loader />  : 
+        <div className="App">
+          <NavContainer/>
+          <Switch>
+            <Route  exact path="/" component={Home} />
+            <Route path="/login" component={AuthContainer} />
+            <Route path="/create" component={CreateTaskScreenContainer} />
+          </Switch>
+        </div>
+      }
+    </BrowserRouter>
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    isLoading: state.app.isLoading
+  }
+}
+  
+export default connect(mapStateToProps)(App);
