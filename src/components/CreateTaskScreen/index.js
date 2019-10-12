@@ -1,10 +1,10 @@
 import React from 'react'
 
 import { Container } from './styles'
-import TopView from  './TopView'
-import BottomView from   './BottomView'
+import TopView from './TopView'
+import BottomView from './BottomView'
 
-console.log('test')
+
 
 const CreateTaskScreen = ({ createTask }) => {
   return (
