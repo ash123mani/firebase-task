@@ -12,6 +12,12 @@ const SignedInLinks = ({ signOut }) => {
   return (
     <Row justify="end" type="flex" gutter={20}>
       <Col>
+        <Link to="/">
+          <Button borderColor="#979797">Home</Button>
+        </Link>
+      </Col>
+
+      <Col>
         <Link to="/create">
           <Button borderColor="#979797">Board</Button>
         </Link>

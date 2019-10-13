@@ -7,7 +7,7 @@ import SignedInLinks from './SignedInLinks'
 import SignedOutLinks from './SignedOutLinks'
 
 
-const Nav = ({ isLoggedIn, signOut }) => {
+const Nav = ({ isLoggedIn, signOut, authAction }) => {
   const handleSignOut = () => {
     signOut()
   }
@@ -18,7 +18,7 @@ const Nav = ({ isLoggedIn, signOut }) => {
         <Text text="Task Mask" textAlign="left" pl={6} fontSize={5} fontWeight={800}/>
       </Col>
       <Col span={18}>
-        { isLoggedIn ? <SignedInLinks signOut={handleSignOut}/> : <SignedOutLinks/> }
+        { isLoggedIn ? <SignedInLinks signOut={handleSignOut} /> : <SignedOutLinks authAction={authAction} /> }
       </Col>
     </Conatiner>
   )

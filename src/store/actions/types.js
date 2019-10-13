@@ -1,3 +1,5 @@
+export const AUTH_ACTION = 'AUTH_ACTION'
+
 export const IS_LOADING = 'IS_LOADING'
 export const IS_ERROR = 'IS_ERROR'
 

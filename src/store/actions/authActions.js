@@ -1,5 +1,7 @@
 import { Redirect } from 'react-router-dom'
 import FirebaseUtils from '../../utils/FirebaseUtils'
+
+import { AUTH_ACTION } from './types'
 import { setError, setLoading } from './appActions'
 
 export const signUp = (newUser) => {
@@ -47,6 +49,13 @@ export const signOut = () => {
         dispatch(setLoading(false))
         dispatch(setError(true))
       })
+  }
+}
+
+export const authAction = (authAction) => {
+  return {
+    type: AUTH_ACTION,
+    payload: authAction
   }
 }
 

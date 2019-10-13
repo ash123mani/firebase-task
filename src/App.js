@@ -5,6 +5,7 @@ import AuthContainer from './containers/Auth'
 import NavContainer from './containers/Nav'
 import Home from './components/Home'
 import Loader from './components/Loader'
+import About from './components/About'
 import CreateTaskScreenContainer from './containers/CreateTaskScreen'
 import ProtectedRoute from './containers/ProtectedRoute'
 import './App.css'
@@ -18,7 +19,8 @@ function App({ isLoading }) {
           <Switch>
             <Route  exact path="/" component={Home} />
             <Route path="/login" component={AuthContainer} />
-            <Route path="/create" component={CreateTaskScreenContainer} />
+            <Route path="/about" component={About}/>
+            <ProtectedRoute path="/create" component={CreateTaskScreenContainer} />
           </Switch>
         </div>
       }

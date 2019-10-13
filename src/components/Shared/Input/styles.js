@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { Input } from 'antd'
-import { space, height, width, fontSize, border } from 'styled-system'
+import { space, height, width, fontSize } from 'styled-system'
 
 import { borderBottom, noBorder } from '../../../styles/base'
 
@@ -24,7 +24,7 @@ const BaseInput = styled(Input)`
   margin: 0;
   min-width: 0;
   border-radius: ${ props => props.borderRadius ? props.borderRadius  : 'unset !important'};
-  border-color: ${({theme}) => theme.colors.borderColor}
+  border-color: ${({theme}) => theme.colors.borderColor};
   font-size: 18px !important;
   background: none !important;
   ${noBorder}
@@ -35,7 +35,7 @@ const BaseInput = styled(Input)`
   ${fontSize}
   &:focus {
     && {
-      border-bottom-color: ${({theme}) => `${theme.colors.primary} !important`}
+      border-bottom-color: ${({theme}) => `${theme.colors.primary} !important`};
       box-shadow: none;
       background: none !important;
     }

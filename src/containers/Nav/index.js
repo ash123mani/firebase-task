@@ -1,11 +1,12 @@
 import { connect } from 'react-redux'
 
 import Nav from '../../components/Nav'
-import { signOut } from '../../store/actions/authActions'
+import { signOut, authAction } from '../../store/actions/authActions'
 
 const mapDispatchToProps = dispatch => {
   return {
-    signOut: _ => dispatch(signOut())
+    signOut: _ => dispatch(signOut()),
+    authAction: action => dispatch(authAction(action))
   }
 }
 

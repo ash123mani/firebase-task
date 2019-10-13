@@ -1,9 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Container } from './styles'
 import Text from '../../Shared/Text'
 import Button from '../../Shared/Button'
-import colors from '../../../styles/colors';
 
 
 const LeftView = () => {
@@ -25,7 +25,9 @@ const LeftView = () => {
         p={3}
         mb={2}
       />
-      <Button m={2} width="90%" float="left" height="45px" fontWeight={500} fontSize={3} borderColor="#979797">Create Your Task</Button>
+      <Link to="/create">
+        <Button m={2} width="90%" float="left" height="45px" fontWeight={500} fontSize={3} borderColor="#979797">Create Your Task</Button>
+      </Link>
     </Container>
   )
 }

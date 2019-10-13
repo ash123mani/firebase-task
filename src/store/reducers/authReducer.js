@@ -1,7 +1,8 @@
-import { USER_LOGIN } from '../actions/types'
+import { USER_LOGIN, AUTH_ACTION } from '../actions/types'
 
 const initialState = {
-  isUserLoggedIn: false
+  isUserLoggedIn: false,
+  authAction: 'signIn'
 }
 
 const authReducer = (state = initialState, action) => {
@@ -10,6 +11,11 @@ const authReducer = (state = initialState, action) => {
       return {
         ...state,
         isUserLoggedIn: action.payload
+      }
+    case  AUTH_ACTION:
+      return {
+        ...state,
+        authAction: action.payload
       }
     default:
       return state

@@ -33,7 +33,6 @@ const BottomView = ({ createTask }) => {
             type="text" 
             name="what" 
             value={values.what || ''} 
-            width="500px" 
             placeholder="I will do yoga today" 
             onChange={handleChange}
           />
@@ -50,7 +49,6 @@ const BottomView = ({ createTask }) => {
             type="text" 
             name="why" 
             value={values.why || ''}
-            width="500px" 
             placeholder="Health is Wealth" 
             onChange={handleChange}
           />          
@@ -67,7 +65,6 @@ const BottomView = ({ createTask }) => {
             type="text" 
             name="when" 
             value={values.when || ''}
-            width="500px" 
             placeholder="Office Hours"
             onChange={handleChange}
             fontSize={5}
@@ -85,7 +82,6 @@ const BottomView = ({ createTask }) => {
             type="text" 
             name="status" 
             value={values.status || ''}
-            width="500px" 
             placeholder="Partially Done"
             onChange={handleChange}
           />        

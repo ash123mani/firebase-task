@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { Button } from 'antd'
 
-import  { space, height, width, fontSize, border, color, typography } from 'styled-system'
+import  { space, height, fontSize, border, color, typography } from 'styled-system'
 
 
 export const BaseButton = styled(Button)`
