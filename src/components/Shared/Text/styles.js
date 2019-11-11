@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { space, color, border, position, typography } from 'styled-system'
+import styled from "styled-components";
+import { space, color, border, position, typography } from "styled-system";
 
 export const BaseText = styled.p`
   margin: 0;
@@ -9,5 +9,4 @@ export const BaseText = styled.p`
   ${color}
   ${position}
   ${typography}
-`
-
+`;

@@ -1,9 +1,9 @@
-export const AUTH_ACTION = 'AUTH_ACTION'
+export const AUTH_ACTION = "AUTH_ACTION";
 
-export const IS_LOADING = 'IS_LOADING'
-export const IS_ERROR = 'IS_ERROR'
+export const IS_LOADING = "IS_LOADING";
+export const IS_ERROR = "IS_ERROR";
 
-export const USER_LOGIN = 'USER_LOGIN'
+export const USER_LOGIN = "USER_LOGIN";
 
-export const CREATE_TASK_SUCCESSFUL = 'CREATE_TASK_SUCCESSFUL'
-export const CREATE_TASK_FAILED = 'CREATE_TASK_FAILED'
+export const CREATE_TASK_SUCCESSFUL = "CREATE_TASK_SUCCESSFUL";
+export const CREATE_TASK_FAILED = "CREATE_TASK_FAILED";

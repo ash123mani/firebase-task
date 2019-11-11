@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import { BaseButton } from './styles'
+import { BaseButton } from "./styles";
 
-const Button = ({children, onClick, ...rest}) => (
+const Button = ({ children, onClick, ...rest }) => (
   <React.Fragment>
-      <BaseButton onClick={onClick} {...rest}>
-        {children}
-      </BaseButton>
+    <BaseButton onClick={onClick} {...rest}>
+      {children}
+    </BaseButton>
   </React.Fragment>
-)
+);
 
 export default Button;

@@ -3,6 +3,6 @@ const colors = {
   normal: "#7b71711c",
   borderColor: "#979797",
   bgColor: "#D8D8D8"
-}
+};
 
-export default colors
+export default colors;

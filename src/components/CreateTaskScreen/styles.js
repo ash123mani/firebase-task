@@ -1,6 +1,5 @@
-import styled from 'styled-components'
-import { } from 'styled-system'
-
+import styled from "styled-components";
+import {} from "styled-system";
 
 export const Container = styled.div`
   display: flex;
@@ -9,7 +8,4 @@ export const Container = styled.div`
   margin: 20px 200px;
   flex-wrap: wrap;
   height: 100vh;
-`
-
-
-
+`;

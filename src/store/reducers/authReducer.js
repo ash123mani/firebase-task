@@ -1,9 +1,9 @@
-import { USER_LOGIN, AUTH_ACTION } from '../actions/types'
+import { USER_LOGIN, AUTH_ACTION } from "../actions/types";
 
 const initialState = {
   isUserLoggedIn: false,
-  authAction: 'signIn'
-}
+  authAction: "signIn"
+};
 
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -11,16 +11,15 @@ const authReducer = (state = initialState, action) => {
       return {
         ...state,
         isUserLoggedIn: action.payload
-      }
-    case  AUTH_ACTION:
+      };
+    case AUTH_ACTION:
       return {
         ...state,
         authAction: action.payload
-      }
+      };
     default:
-      return state
+      return state;
   }
-}
+};
 
-
-export default authReducer
+export default authReducer;

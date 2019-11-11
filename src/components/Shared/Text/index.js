@@ -1,12 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import { BaseText } from './styles'
-
+import { BaseText } from "./styles";
 
 const Text = ({ text, ...props }) => {
-  return (
-    <BaseText {...props}>{text}</BaseText>
-  )
-}
+  return <BaseText {...props}>{text}</BaseText>;
+};
 
-export default Text
+export default Text;

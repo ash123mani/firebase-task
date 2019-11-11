@@ -1,14 +1,14 @@
-import { IS_LOADING, IS_ERROR } from '../actions/types'
+import { IS_LOADING, IS_ERROR } from "../actions/types";
 
 const initialState = {
   isLoading: false,
   error: {
-    isError: false,
+    isError: false
   }
-}
+};
 
 const appReducer = (state = initialState, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case IS_LOADING:
       return {
         ...state,
@@ -17,20 +17,19 @@ const appReducer = (state = initialState, action) => {
           ...state.error,
           isError: false
         }
-      }
+      };
     case IS_ERROR:
       return {
         ...state,
         error: {
           ...state.error,
           isError: action.payload,
-          errorText: action.payload ? 'Error occured' : null
-        }        
-      }
+          errorText: action.payload ? "Error occured" : null
+        }
+      };
     default:
-      return state   
+      return state;
   }
-}
+};
 
-export default appReducer
-
+export default appReducer;
